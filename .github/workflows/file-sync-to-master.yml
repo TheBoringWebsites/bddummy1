@@ -1,0 +1,26 @@
+name: Net Standard File Sync
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: 0/5 * * * *
+
+jobs:
+  file_syncs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: On Ubuntu
+        uses: actions/checkout@master
+      # File Sync
+      - name: File Sync Started
+        uses: kbrashears5/github-action-file-sync@master
+        with:
+          REPOSITORIES: |
+            TheBoringWebsites/bddummy2
+            TheBoringWebsites/bddummy3
+          FILES: |
+            ./templates/*=.github/workflows/
+            ./LICENSE=LICENSE
+          TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

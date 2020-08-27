@@ -1,5 +1,7 @@
-name: Varun-2
+# This simply syncs only workflows in ".github/workflows",no custom destination folder is supported.
+# No support for reading every file in a folder and simply copy pasting it in destination.
 
+name: Varun-2
 on:
   push:
     branches:
@@ -12,12 +14,20 @@ env:
   
   
   WORKFLOW_FILES: |
-            # trying if folders can be copied
-            #./templates/*=./2
-            #LICENSE=LICENSE
-            # with direct file name it works
-            ./templates/Mac-Dev-Dev.yml= ./2
-            #./templates/*.yml=/2
+            # 
+            ./templates/Mac-Mas-Mas.yml
+            ./templates/Mac-Dev-Mas.yml
+            ./templates/Mac-Dev-Dev.yml
+            ./templates/Win-Mas-Mas.yml
+            ./templates/Win-Dev-Mas.yml
+            ./templates/Win-Dev-Dev.yml
+            ./templates/Ubu-Mas-Mas.yml
+            ./templates/Ubu-Dev-Mas.yml
+            ./templates/Ubu-Dev-Dev.yml
+            ./templates/Multi-CI-tic-Mas-Mas.yml
+            ./templates/Multi-CI-tic-Dev-Mas.yml
+            ./templates/Multi-CI-tidyverse-Mas-Mas.yml
+
 
 jobs:
   Varun-2:

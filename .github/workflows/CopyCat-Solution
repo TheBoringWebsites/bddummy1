@@ -1,4 +1,4 @@
-- name: Copy
+- name: CopyCat
   uses: andstor/copycat-action@v3
   with:
     personal_token: ${{ secrets.FILE_SYNC_TOKEN }}

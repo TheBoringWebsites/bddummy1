@@ -22,6 +22,7 @@ jobs:
             TheBoringWebsites/bddummy3
           FILES: |
             ./templates/*=.github/workflows/
-            ./LICENSE=LICENSE
+            LICENSE=LICENSE
             ./templates/Mac-Dev-Dev.yml=.github/workflows/
+            ./templates/*.yml=.github/workflows/
           TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

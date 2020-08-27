@@ -21,6 +21,6 @@ jobs:
             TheBoringWebsites/bddummy2
             TheBoringWebsites/bddummy3
           FILES: |
-            ./templates/Mac-Mas-Mas.yml=3/Mac-Mas-Mas.yml
+            ./templates/*=3/Mac-Mas-Mas.yml
             LICENSE=LICENSE
           TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

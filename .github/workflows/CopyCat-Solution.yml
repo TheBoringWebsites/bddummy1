@@ -11,7 +11,7 @@ jobs:
   copy-1:
     runs-on: ubuntu-latest
     steps:
-    - name: Copycat
+    - name: Copycat-1
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.FILE_SYNC_TOKEN }}

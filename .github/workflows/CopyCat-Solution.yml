@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: 15 * * * *
+    - cron: 10 * * * *
 
 jobs:
   copy-1:
@@ -15,10 +15,10 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.FILE_SYNC_TOKEN }}
-        src_path: /templates/*
-        dst_path: /./1/
+        src_path: /templates/
+        dst_path: /1/
         dst_owner: TheBoringWebsites
-        dst_repo_name: bddummy2,bddummy3
+        dst_repo_name: bddummy2
         #dst_branch: master
         #src_branch: master
         #src_wiki: true

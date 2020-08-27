@@ -13,11 +13,11 @@ env:
   
   WORKFLOW_FILES: |
             # trying if folders can be copied
-            ./templates/*=./2
-            LICENSE=LICENSE
+            #./templates/*=./2
+            #LICENSE=LICENSE
             # with direct file name it works
-            #./templates/Mac-Dev-Dev.yml=.github/workflows/
-            ./templates/*.yml=/2
+            ./templates/Mac-Dev-Dev.yml= ./2
+            #./templates/*.yml=/2
 
 jobs:
   Varun-2:

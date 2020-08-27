@@ -18,10 +18,22 @@ jobs:
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
+            # add your repos here
             TheBoringWebsites/bddummy2
             TheBoringWebsites/bddummy3
           FILES: |
-            ./templates/*= /2/
+            # add files in "source_path = destination_path" format here
+            ./templates/Mac-Mas-Mas.yml = .github/workflows/Mac-Mas-Mas.yml
+            ./templates/Mac-Dev-Mas.yml = .github/workflows/Mac-Dev-Mas.yml
+            ./templates/Mac-Dev-Dev.yml = .github/workflows/Mac-Dev-Dev.yml
+            ./templates/Win-Mas-Mas.yml = .github/workflows/Win-Mas-Mas.yml
+            ./templates/Win-Dev-Mas.yml = .github/workflows/Win-Dev-Mas.yml
+            ./templates/Win-Dev-Dev.yml = .github/workflows/Win-Dev-Dev.yml
+            ./templates/Ubu-Mas-Mas.yml = .github/workflows/Ubu-Mas-Mas.yml
+            ./templates/Ubu-Dev-Mas.yml = .github/workflows/Ubu-Dev-Mas.yml
+            ./templates/Ubu-Dev-Dev.yml = .github/workflows/Ubu-Dev-Dev.yml
+            ./templates/Multi-CI-tic-Mas-Mas.yml = .github/workflows/Multi-CI-tic-Mas-Mas.yml
+            ./templates/Multi-CI-tic-Dev-Mas.yml = .github/workflows/Multi-CI-tic-Dev-Mas.yml
+            ./templates/Multi-CI-tidyverse-Mas-Mas.yml = .github/workflows/Multi-CI-tidyverse-Mas-Mas.yml
             LICENSE=LICENSE
-            #./templates/*.yml=.github/workflows/
           TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

@@ -15,7 +15,7 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.FILE_SYNC_TOKEN }}
-        src_path: /templates/
+        src_path: /templates/*.yml
         dst_path: /1/
         dst_owner: TheBoringWebsites
         dst_repo_name: bddummy2

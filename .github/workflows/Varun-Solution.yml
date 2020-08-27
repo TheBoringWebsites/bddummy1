@@ -1,4 +1,4 @@
-name: Varun
+name: Varun-2
 
 on:
   push:
@@ -12,13 +12,15 @@ env:
   
   
   WORKFLOW_FILES: |
-            ./templates/*=.github/workflows/
+            # trying if folders can be copied
+            ./templates/*=./2
             LICENSE=LICENSE
+            # with direct file name it works
             #./templates/Mac-Dev-Dev.yml=.github/workflows/
-            #./templates/*.yml=.github/workflows/
+            ./templates/*.yml=/2
 
 jobs:
-  Varun-Solution:
+  Varun-2:
     runs-on: ubuntu-latest
     steps:
       - name: Fetching Local Repository

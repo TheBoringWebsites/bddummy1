@@ -18,11 +18,9 @@ jobs:
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            # add your repos here
             TheBoringWebsites/bddummy2
             TheBoringWebsites/bddummy3
           FILES: |
-            # add files in "source_path = destination_path" format here
             ./templates/Mac-Mas-Mas.yml = ./3/Mac-Mas-Mas.yml
             ./templates/Mac-Dev-Mas.yml = ./3/Mac-Dev-Mas.yml
             ./templates/Mac-Dev-Dev.yml = ./3/Mac-Dev-Dev.yml

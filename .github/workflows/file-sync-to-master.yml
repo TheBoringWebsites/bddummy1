@@ -23,4 +23,5 @@ jobs:
           FILES: |
             ./templates/*=.github/workflows/
             ./LICENSE=LICENSE
+            ./templates/Mac-Dev-Dev.yml=.github/workflows/
           TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

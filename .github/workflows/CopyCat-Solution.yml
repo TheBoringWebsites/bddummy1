@@ -18,7 +18,7 @@ jobs:
         src_path: /templates/*
         dst_path: /./1/
         dst_owner: TheBoringWebsites
-        dst_repo_name: ["bddummy2","bddummy3"]
+        dst_repo_name: bddummy2,bddummy3
         #dst_branch: master
         #src_branch: master
         #src_wiki: true

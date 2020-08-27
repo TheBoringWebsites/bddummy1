@@ -1,5 +1,5 @@
 
-name: CopyCat-1
+
 
 on:
   push:
@@ -21,3 +21,30 @@ jobs:
           dst_owner: TheBoringWebsites
           dst_repo_name: ["bddummy2","bddummy3"]
   
+name: CopyCat-1
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: 15 * * * *
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copycat
+      uses: andstor/copycat-action@v3
+      with:
+        personal_token: ${{ secrets.FILE_SYNC_TOKEN }}
+        src_path: /templates/*
+        dst_path: /./1/
+        dst_owner: TheBoringWebsites
+        dst_repo_name: ["bddummy2","bddummy3"]
+        #dst_branch: master
+        #src_branch: master
+        #src_wiki: true
+        #dst_wiki: false
+        #username: sunn-e
+        #email: sunnydhoke22@gmail.com

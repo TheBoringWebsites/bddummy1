@@ -1,11 +1,11 @@
-name: CI workflow File Sync
+name: kbrashears5
 
 on:
   push:
     branches:
       - master
   schedule:
-    - cron: 0/5 * * * *
+    - cron: 15 * * * *
 
 jobs:
   file_syncs:

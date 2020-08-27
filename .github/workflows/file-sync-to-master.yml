@@ -1,4 +1,4 @@
-name: Net Standard File Sync
+name: CI workflow File Sync
 
 on:
   push:

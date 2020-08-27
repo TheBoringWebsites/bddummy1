@@ -21,17 +21,6 @@ jobs:
             TheBoringWebsites/bddummy2
             TheBoringWebsites/bddummy3
           FILES: |
-            ./templates/Mac-Mas-Mas.yml = ./3/Mac-Mas-Mas.yml
-            ./templates/Mac-Dev-Mas.yml = ./3/Mac-Dev-Mas.yml
-            ./templates/Mac-Dev-Dev.yml = ./3/Mac-Dev-Dev.yml
-            ./templates/Win-Mas-Mas.yml = ./3/Win-Mas-Mas.yml
-            ./templates/Win-Dev-Mas.yml = ./3/Win-Dev-Mas.yml
-            ./templates/Win-Dev-Dev.yml = ./3/Win-Dev-Dev.yml
-            ./templates/Ubu-Mas-Mas.yml = ./3/Ubu-Mas-Mas.yml
-            ./templates/Ubu-Dev-Mas.yml = ./3/Ubu-Dev-Mas.yml
-            ./templates/Ubu-Dev-Dev.yml = ./3/Ubu-Dev-Dev.yml
-            ./templates/Multi-CI-tic-Mas-Mas.yml = ./3/Multi-CI-tic-Mas-Mas.yml
-            ./templates/Multi-CI-tic-Dev-Mas.yml = ./3/Multi-CI-tic-Dev-Mas.yml
-            ./templates/Multi-CI-tidyverse-Mas-Mas.yml = ./3/Multi-CI-tidyverse-Mas-Mas.yml
+            ./templates/Mac-Mas-Mas.yml = 3/Mac-Mas-Mas.yml
             LICENSE=LICENSE
           TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

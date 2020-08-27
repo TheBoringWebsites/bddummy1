@@ -1,8 +1,23 @@
-- name: CopyCat
-  uses: andstor/copycat-action@v3
-  with:
-    personal_token: ${{ secrets.FILE_SYNC_TOKEN }}
-    src_path: /templates/*
-    dst_path: /.github/workflows/
-    dst_owner: TheBoringWebsites
-    dst_repo_name: bddummy3
+
+name: CopyCat-1
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: 15 * * * *
+
+jobs:
+  file_syncs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CopyCat-1
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.FILE_SYNC_TOKEN }}
+          src_path: /templates/*
+          dst_path: /./1/
+          dst_owner: TheBoringWebsites
+          dst_repo_name: ["bddummy2","bddummy3"]
+  

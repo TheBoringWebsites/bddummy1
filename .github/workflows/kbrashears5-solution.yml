@@ -1,4 +1,4 @@
-name: kbrashears5
+name: kbrashears5-3
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
     - cron: 15 * * * *
 
 jobs:
-  file_syncs:
+  kbrashears5-3:
     runs-on: ubuntu-latest
     steps:
       - name: On Ubuntu
@@ -21,8 +21,7 @@ jobs:
             TheBoringWebsites/bddummy2
             TheBoringWebsites/bddummy3
           FILES: |
-            ./templates/*=.github/workflows/
+            ./templates/*= /2/
             LICENSE=LICENSE
-            ./templates/Mac-Dev-Dev.yml=.github/workflows/
-            ./templates/*.yml=.github/workflows/
+            #./templates/*.yml=.github/workflows/
           TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

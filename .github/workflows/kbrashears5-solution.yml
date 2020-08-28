@@ -21,6 +21,6 @@ jobs:
             TheBoringWebsites/bddummy2
             TheBoringWebsites/bddummy3
           FILES: |
-            templates=3
+            templates/*=3/
             LICENSE=LICENSE
           TOKEN: ${{ secrets.FILE_SYNC_TOKEN }}

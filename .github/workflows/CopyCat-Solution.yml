@@ -1,11 +1,10 @@
+# overwrites,not good.
 name: CopyCat-1
 
 on:
   push:
     branches:
       - master
-  schedule:
-    - cron: 10 * * * *
 
 jobs:
   copy-1:
